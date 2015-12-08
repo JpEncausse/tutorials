@@ -124,8 +124,19 @@
                   "label": ""
                 },
                 "properties": {
-                  "name": "",
-                  "inputParams": [],
+                  "name": "DisplayCityWeather",
+                  "inputParams": [
+                    {
+                      "key": "cityName",
+                      "type": "entityKnowledge",
+                      "value": "answer"
+                    },
+                    {
+                      "key": "cityWeather",
+                      "type": "entityKnowledge",
+                      "value": "weather"
+                    }
+                  ],
                   "outputParams": []
                 },
                 "children": [],
