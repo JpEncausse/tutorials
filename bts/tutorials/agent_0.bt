@@ -53,7 +53,7 @@
                 {
                   "key": "message",
                   "type": "string",
-                  "value": "Hello World"
+                  "value": "answer"
                 }
               ],
               "outputParams": []
