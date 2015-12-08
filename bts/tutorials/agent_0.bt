@@ -14,20 +14,57 @@
         "metadata": {
           "label": ""
         },
-        "properties": {
-          "name": "Say",
-          "inputParams": [
-            {
-              "key": "message",
-              "type": "string",
-              "value": "Hello World"
-            }
-          ],
-          "outputParams": []
-        },
-        "children": [],
-        "id": "e7f81616-9555-4a85-92db-2f5962baf425",
-        "type": "action"
+        "properties": {},
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "Prompt",
+              "inputParams": [
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Please fill the message"
+                }
+              ],
+              "outputParams": [
+                {
+                  "key": "answer",
+                  "type": "entityKnowledge",
+                  "value": "answer"
+                }
+              ]
+            },
+            "children": [],
+            "id": "d130d6db-04ed-4256-8814-7b6c31c49a30",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "Say",
+              "inputParams": [
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Hello World"
+                }
+              ],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "e7f81616-9555-4a85-92db-2f5962baf425",
+            "type": "action"
+          }
+        ],
+        "id": "88ba5e76-a3a9-4ae3-8b81-29cc1a19f1f0",
+        "type": "sequence"
       }
     ],
     "id": "9b9bed1d-6637-4207-bc9d-6095f847fa8c"
