@@ -81,6 +81,80 @@
             "children": [],
             "id": "e7f81616-9555-4a85-92db-2f5962baf425",
             "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "GetCityWeather",
+              "inputParams": [
+                {
+                  "key": "cityName",
+                  "type": "entityKnowledge",
+                  "value": "answer"
+                }
+              ],
+              "outputParams": [
+                {
+                  "key": "weather",
+                  "type": "entityKnowledge",
+                  "value": "weather"
+                }
+              ]
+            },
+            "children": [],
+            "id": "1961da68-8159-4f13-98bc-97fe419c3f7d",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "statusCondition": "failsIfAnyFails",
+              "retryPolicy": "propagateToRunning"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "name": "",
+                  "inputParams": [],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "e4c7b625-c9f6-44aa-88e3-99648516906e",
+                "type": "action"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "name": "Say",
+                  "inputParams": [
+                    {
+                      "key": "message",
+                      "type": "entityKnowledge",
+                      "value": "answer"
+                    }
+                  ],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "ac9d558b-240c-4f4a-9190-b8df748ffd29",
+                "type": "action"
+              }
+            ],
+            "id": "d37784ac-8525-48e1-981c-fecec963ac7f",
+            "type": "parallel"
           }
         ],
         "id": "88ba5e76-a3a9-4ae3-8b81-29cc1a19f1f0",
