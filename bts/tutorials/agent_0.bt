@@ -52,7 +52,7 @@
               "inputParams": [
                 {
                   "key": "message",
-                  "type": "string",
+                  "type": "entityKnowledge",
                   "value": "answer"
                 }
               ],
